@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bricktastic Birthday | LEGOLAND</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        @font-face {
+            font-family: "Light";
+            src: url(../day08/Cera\ Pro\ Light.otf);
+        }
+
+        @font-face {
+            font-family: "Bold";
+            src: url(../day08/Cera\ Pro\ Bold.otf);
+        }
+
+        body {
+            font-family: "Light";
+        }
+
+        #top_yellow {
+            height: 40px;
+            background-color: #e9ac00;
+
+        }
+
+        .top_yellow_text {
+            height: 40px;
+            float: right;
+            position: relative;
+            right: 400px;
+        }
+
+        #bottom_yellow {
+            height: 100px;
+            background-color: #ffcf00;
+
+
+        }
+
+        .bottom_yellow_text {
+            height: 100px;
+            float: right;
+            position: relative;
+            right: 400px;
+        }
+
+        .logo {
+            height: 100px;
+            position: relative;
+            left: 350px;
+        }
+
+        #grey {
+            font-family: "Bold";
+            height: 250px;
+            background-color: #ededed;
+            text-align: center;
+        }
+
+        #grey text {
+            font-size: 48px;
+            font-weight: 800;
+            font-family: sans-serif,
+        }
+
+        #calendar_clock_div {
+            text-align: center;
+            margin: 60px auto 0 auto;
+        }
+
+        .calendar_text,
+        .clock_text {
+            font-family: "Bold";
+            width: 525px;
+            height: 70px;
+            display: inline-block;
+            background-color: #006db7;
+            margin-top: 50px;
+            color: white;
+        }
+
+        .clock {
+            margin-left: 25px;
+        }
+
+        .calendar,
+        .clock {
+            width: 20px;
+            margin-right: 10px;
+            filter: invert(1);
+        }
+
+        #birthday_button {
+            width: 550px;
+            height: 100px;
+            font-family: "Bold";
+            font-size: 30px;
+            text-align: center;
+            margin: 50px auto 0 auto;
+            background-color: #9f875c;
+            color: white;
+        }
+
+        .main_pic {
+            width: 720px;
+            height: 480px;
+            position: relative;
+            top: 20px;
+        }
+
+        #main_pic {
+            width: 720px;
+            height: 732px;
+        }
+
+        #main_description div {
+            width: 475px;
+            height: 732px;
+            margin: 0 38px 0 38px;
+        }
+
+        #main_pic,
+        #main_description {
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            align-items: center;
+            margin: 0 auto 0 auto;
+        }
+
+        #both_main {
+            text-align: center;
+        }
+
+        .pin_text {
+            font-family: "Bold";
+        }
+
+        #LEGOLAND {
+            font-family: "Bold";
+            width: 550px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            margin: 20px auto 200px auto;
+            text-align: center;
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            color: white;
+            font-size: 20px;
+            background-color: #d01012;
+            border: none;
+        }
+
+        #four_pics {
+            text-align: center;
+        }
+
+        #four_pics img {
+            width: 348px;
+            height: 348px;
+            margin: 100px 5px 100px 5px;
+        }
+
+        #side_blue {
+            width: 120px;
+            height: 135%;
+            background: #006db7;
+            position: absolute;
+            top: 158px;
+            display: inline-block;
+        }
+
+        #side_blue_top {
+            width: 120px;
+            height: 250px;
+            background: #004f84;
+            position: absolute;
+            top: 140px;
+            display: inline-block;
+        }
+
+        #green {
+            height: 300px;
+            width: 75%;
+            background-color: #009d2e;
+            position: relative;
+            top: 70px;
+            z-index: 2;
+        }
+
+        .green_text {
+            height: 300px;
+            position: relative;
+            left: 650px;
+        }
+
+        #top_blue {
+            height: 315px;
+            background-color: #31a1e0;
+            position: relative;
+        }
+
+        .top_blue_text {
+            height: 315px;
+            position: relative;
+            left: 625px;
+        }
+
+        #bottom_blue {
+            height: 433px;
+            background-color: #004f84;
+        }
+
+        .bottom_blue_text {
+            height: 433px;
+            position: relative;
+            left: 600px;
+        }
+
+        #white {
+            width: 100%;
+            height: 197px;
+        }
+
+        .white_text {
+            height: 197px;
+            position: relative;
+            left: 650px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top_yellow"><img class="top_yellow_text" src="../day08/darkyellow.png" alt="darkyellowtext"> </div>
+    <div id="bottom_yellow"><img class="logo" src="../day08/logo.png" alt="lego logo"><img class="bottom_yellow_text"
+            src="../day08/yellow.png" alt="yellowtext"> </div>
+    <div id="grey">
+        <text></text><br><br>
+        <text>Bricktastic Birthday</text>
+    </div>
+    <div id="calendar_clock_div">
+        <text class="calendar_text"><br><img class="calendar" src="../day08/calendar.png" alt="calendar">판매기간:
+            2022년 12월 5일
+            ~<img class="clock" src="../day08/clock.png" alt="clock">숙박기간: 2022년 12월
+            19일~</text>
+    </div>
+    <div id="birthday_button">
+        <text><br>브릭타스틱 생일</text>
+    </div>
+    <div id="LEGOLAND">
+        <h2><br>
+            우리 아이의 생일을 더욱 특별하게 만들어줄
+            <br>
+            LEGOLAND® 호텔 생일 패키지
+        </h2>
+    </div>
+    <div id="both_main">
+        <div id="main_pic"><img class="main_pic" src="../day08/mainpic.jpeg" alt="Happy Birthday Group Photo"></div>
+        <div id="main_description">
+            <div>
+                <p>
+                    LEGOLAND® 호텔 투숙 기간 중 생일을 축하하고 싶으신 손님분들은 레고랜드 생일 데코 옵션을 추가로 구입해보세요.
+                </p>
+                <p>
+                    ⭐️ LEGO® 테마 객실 및 조식 (투숙인원 최대 5인까지, 파크 이용권 비포함)<br>
+                    🍩 초코홀릭 도넛 케익 1개 (스카이라인 라운지 2층에서 직접 픽업)<br>
+                    🛍 생일 이름표, 뱃지, 랜야드, LEGO® 미니피겨 종이왕관, 대형 생일 배너, 손편지 카드 제공<br>
+                    🎁 트레저 헌트에 숨겨진 깜짝 인형 선물 증정(아가방 니키 애착인형)<br>
+                    🎈 객실용 파티 셋트 (미니바 음료 10개, 스낵 3개)
+                </p>
+                <p>
+                    ✔ 판매기간: 2022년 12월 5일 ~ <br>
+                    ✔ 숙박기간: 2022년 12월 19일 ~
+                </p>
+                <p>
+                    💸 금액 : 11만원 (세금 포함) <br>
+                    💡 연간이용권 소지자 할인 : 9만 9천원 (세금포함)
+                </p>
+                <p class="pin_text">
+                    📌다른 객실 패키지로 예약하신 고객도 생일 파티 프렙 셋을 별도로 추가 하실 수 있습니다. 홈페이지 내 “<text style="color: #d01012">다이닝</text>”
+                    페이지에서 생일 파티 프렙셋을 신청하세요!
+                </p>
+                <p>
+                    <text style="font-family: 'Bold'">유의사항</text> <br>
+                    • LEGOLAND® 호텔 객실 예약이 확약된 고객만 사전 예약 가능합니다. (옵션 추가는 방문 3일 전까지만 예약 가능)<br>
+                    • 본 상품은 선결제 상품으로 예약 요청시 결제 링크를 보내드립니다. 결제 완료시에만 예약이 확약됩니다.<br>
+                    • 이메일(<text style="color: #d01012">LLKR.reservations@legoland.com</text>) 혹은 유선으로 (033-815-2300)
+                    예약하실 수 있습니다. (예약번호, 고객명, 생일자 성함, 연락처
+                    (전화번호,
+                    이메일
+                    명시))
+                </p>
+                <button><a style="color:white;"
+                        href="https://book-directonline.com/properties/legolandkorearesortdirect?locale=ko&amp;trackPage=yes&amp;promocode=birth&amp;utm_source=webpage&amp;utm_term=&amp;utm_content=birth&amp;utm_medium=button&amp;utm_campaign=LKR_hotel_birth"
+                        target="_blank" rel="noopener noreferrer" class="button button--primary">예약하기</a></button>
+            </div>
+        </div>
+    </div>
+    <div id="four_pics">
+        <img src="../day08/pic01.png" alt="pic01">
+        <img src="../day08/pic02.png" alt="pic02">
+        <img src="../day08/pic03.png" alt="pic03">
+        <img src="../day08/pic04.jpeg" alt="pic04">
+    </div>
+    <div id="side_blue"></div>
+    <div id="side_blue_top"></div>
+    <div id="green"><img class="green_text" src="../day08/email.png" alt="email"> </div>
+    <div id="top_blue"><img class="top_blue_text" src="../day08/lightblue.png" alt="lightbluetext"> </div>
+    <div id="bottom_blue"><img class="bottom_blue_text" src="../day08/darkblue.png" alt="darkbluetext"> </div>
+    <div id="white"><img class="white_text" src="../day08/white.png" alt="whitetext"> </div>
+</body>
+<footer>
+
+</footer>
+
+</html>
